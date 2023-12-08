@@ -25,14 +25,6 @@ elif [[ $WRT_URL == *"immortalwrt"* ]] ; then
 fi
 
 #配置文件修改
-echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
-echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
 
-if [[ $WRT_URL == *"lede"* ]]; then
-	echo "CONFIG_PACKAGE_luci-app-ssr-plus=y" >> ./.config
-	echo "CONFIG_PACKAGE_luci-app-openclash=y" >> ./.config
-elif [[ $WRT_URL == *"immortalwrt"* ]] ; then
-	#echo "CONFIG_PACKAGE_luci=y" >> ./.config
-	#echo "CONFIG_LUCI_LANG_zh_Hans=y" >> ./.config
-	#echo "CONFIG_PACKAGE_luci-app-homeproxy=y" >> ./.config
-fi
+
+
